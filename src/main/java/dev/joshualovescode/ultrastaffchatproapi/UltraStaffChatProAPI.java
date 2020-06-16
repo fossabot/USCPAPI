@@ -34,6 +34,8 @@ public class UltraStaffChatProAPI {
         getHandler().sendMessage(m);
     }
 
+    public static void handleMessage(USCPMessage m) { getReceiver().receiveMessage(m); }
+
     public static void init(APIHandler apiHandler){
         api = new UltraStaffChatProAPI(apiHandler);
         em = new EventManager();
