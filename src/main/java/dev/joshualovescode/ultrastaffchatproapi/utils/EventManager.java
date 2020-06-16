@@ -18,20 +18,20 @@ import java.util.*;
 public class EventManager {
     private static Map<String, USCPListener> listeners = new HashMap<String, USCPListener>();
 
-    public static void registerListener(Class owner, USCPListener listener){
+    public void registerListener(Class owner, USCPListener listener){
         listeners.put(owner.getSimpleName(), listener);
         UltraStaffChatProAPI.getHandler().listenerRegistered(listener, owner);
     }
 
-    public static void unregisterListeners(Class owner){
+    public void unregisterListeners(Class owner){
         listeners.remove(owner.getSimpleName());
     }
 
-    public static Collection<USCPListener> getRegisteredListeners(){
+    public Collection<USCPListener> getRegisteredListeners(){
         return listeners.values();
     }
 
-    public static USCPMessageEvent runMessageEvent(USCPMessage m){
+    public USCPMessageEvent runMessageEvent(USCPMessage m){
         USCPMessageEvent event = new USCPMessageEvent(m);
         for(Map.Entry<String, USCPListener> l : listeners.entrySet()){
             l.getValue().onMessageReceived(event);

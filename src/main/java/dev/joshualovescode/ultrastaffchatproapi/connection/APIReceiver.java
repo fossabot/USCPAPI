@@ -8,6 +8,7 @@
 
 package dev.joshualovescode.ultrastaffchatproapi.connection;
 
+import dev.joshualovescode.ultrastaffchatproapi.UltraStaffChatProAPI;
 import dev.joshualovescode.ultrastaffchatproapi.utils.EventManager;
 
 public class APIReceiver {
@@ -16,6 +17,6 @@ public class APIReceiver {
      * @return Boolean (IsCancelled)
      */
     public Boolean receiveMessage(USCPMessage m){
-        return !EventManager.runMessageEvent(m).isCanceled();
+        return !UltraStaffChatProAPI.getEventManager().runMessageEvent(m).isCanceled();
     }
 }
