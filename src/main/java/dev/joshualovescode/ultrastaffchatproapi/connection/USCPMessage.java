@@ -22,7 +22,7 @@ public class USCPMessage {
      * @param server - Name of the Server.
      * @param message - The Message.
      */
-    private USCPMessage(String player, String server, String message){
+    public USCPMessage(String player, String server, String message){
         this.messageType = USCPMessageType.STAFFCHAT_MESSAGE;
         this.playerName = player;
         this.serverName = server;
@@ -36,7 +36,7 @@ public class USCPMessage {
      * @param server - Name of the Server.
      * @param message - The Message.
      */
-    private USCPMessage(String channelName, String player, String server, String message){
+    public USCPMessage(String channelName, String player, String server, String message){
         this.messageType = USCPMessageType.MULTICHANNEL_MESSAGE;
         this.channelName = channelName;
         this.playerName = player;
