@@ -26,7 +26,7 @@ public class UltraStaffChatProAPI {
 
     public static APIHandler getHandler() { return handler; }
 
-    protected static APIReceiver getReceiver(){
+    private static APIReceiver getReceiver(){
         return receiver;
     }
 

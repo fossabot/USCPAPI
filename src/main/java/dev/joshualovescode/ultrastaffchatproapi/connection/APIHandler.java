@@ -23,5 +23,5 @@ public abstract class APIHandler {
      * @param listener - The Listener that has been registered.
      * @param belongsTo - The owner of the Listener.
      */
-    public abstract void listenerRegistered(USCPListener listener, Class belongsTo);
+    public abstract void listenerRegistered(USCPListener listener, String belongsTo);
 }
