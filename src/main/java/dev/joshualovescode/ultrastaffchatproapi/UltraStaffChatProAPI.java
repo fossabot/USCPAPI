@@ -1,5 +1,5 @@
 /**
- *    UltraStaffChatProAPI (USCPAPI) - The official Develoepr API of UltraStaffChatPro.
+ *    UltraStaffChatProAPI (USCPAPI) - The official Developer API of UltraStaffChatPro.
  *    Copyright (C) 2020  Joshua Sing & Myles Newton. <contact@joshualovescode.dev>
  *
  *    This program is free software: you can redistribute it and/or modify
